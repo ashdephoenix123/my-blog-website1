@@ -1,0 +1,19 @@
+<%- include('partials/header') -%>
+<span class="blank" hidden>
+   <ul>
+    <li> Field cannot be blank</li>
+   </ul>
+</span> 
+<h1>
+    Compose
+</h1>
+
+<form action="/compose" method="post">
+    <label for="title">Title</label><br />
+    <input type="text" name="title"><br />
+    <label for="Description">Description</label><br />
+    <textarea name="description" rows="6"></textarea><br />
+    <button type="submit" class="btn">Publish</button>
+</form>
+
+<%- include('partials/footer') -%>
